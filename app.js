@@ -11,7 +11,8 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //Set up default mongoose connection 
-var mongoDB = 'mongodb://127:0.0.1/my_database'; 
+var mongoDB = "mongodb+srv://firefox:mongodb13@cluster0.3citq.mongodb.net/local_library?retryWrites=true&w=majority"
+
 mongoose.connect(mongoDB, {userNewUrlParse: true}); 
 
 //get default connection 
